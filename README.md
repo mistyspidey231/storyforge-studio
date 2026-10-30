@@ -1,18 +1,19 @@
 # StoryForge Studio
 
-A public, free-to-use creative workspace for writing original stories and planning manga/manhwa.
+A responsive early-access workspace for planning original stories, characters, world rules and manga/manhwa page layouts.
 
-## Features
-- Open access; no account required for this first release
-- Story projects and premise editing
-- Character profiles
-- World bible: setting, power system, history and conflicts
-- Chapter writer with local saving and text export
-- Manga/manhwa page and panel editor with dialogue
-- JSON backup, import and individual project export
+## Run
+Requires Node.js 18+. Run `npm start` and open `http://localhost:3000`. No external packages are required.
 
-## Run locally
-Use Node.js 18+, then run `npm start` and open http://localhost:3000.
+## Current features
+- Create and list story projects (genre, format, logline).
+- Save character profiles and world bible notes in browser localStorage.
+- Draft three-panel comic pages and save them to a selected project.
+- Export a page as a text file.
+- Responsive desktop/mobile layout.
 
-## Current limitations
-Projects are saved in the current browser only; they do not sync across devices. AI text/image generation, account registration, cloud storage, image upload and production moderation are not yet connected. The website is a functional first release, not a claim that those planned services are already live.
+## Important limitations
+This is an early working foundation, not the complete planned AI product. Projects are stored only in the current browser; account sign-in and cloud sync are not implemented. AI text/image generation, a full chapter manuscript editor, image-reference management, character consistency tools, and production security/testing remain to be built. Do not add API keys to browser code. A future AI provider integration may incur usage charges.
+
+## Render
+Create a Node web service from this repository. Build command: `npm install` (no dependencies currently); start command: `npm start`.
